@@ -2,8 +2,8 @@
 #Update system before installing new packages
 sudo apt-get update
 #openjdk is required to install Java3d 
-sudo apt-get install openjdk-7-jre
-sudo apt-get install openjdk-7-jdk
+sudo apt-get install -y openjdk-7-jre
+sudo apt-get install -y openjdk-7-jdk
 #Downloading the Java3d package for 64-bit system
 wget download.java.net/media/java3d/builds/release/1.5.2/j3d-1_5_2-linux-amd64.zip
 #extracting the files
@@ -19,4 +19,4 @@ export CLASSPATH=.:/tmp/j3d-jre/lib/ext/j3dcore.jar:/tmp/j3d-jre/lib/ext/j3dutil
 export LD_LIBRARY_PATH=/tmp/j3d-jre/lib/amd64
 #All jre should go in /lib/ in ubuntu
 sudo cp /tmp/j3d-jre/lib/amd64/* /lib/
-sudo apt-get install icedtea-plugin
+sudo apt-get install -y icedtea-plugin
